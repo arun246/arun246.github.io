@@ -38,7 +38,7 @@
 			  </td>
 
 			  <td>
-				<h5 class="text-title">OTHER EXAM TEST</h5>
+				<h5 class="text-title">OTHER EXAMS</h5>
 				<ul>
 					<li>OTHER</li>
 					<li>OTHER</li>
