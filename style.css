@@ -1,0 +1,106 @@
+
+body{
+	background-color:#555555;
+	font: bold 19px Helvetica, Arial;
+	margin-top: 70px;
+	
+}
+.container{
+	border:1px solid #000;
+	padding: 4px 4px;
+	width:80%;
+	margin:auto;
+	
+	
+}
+table{
+	
+	font-size:25px;
+	border-spacing:1px;
+	margin: auto;
+	font: bold 19px , Arial;
+	
+	
+	
+}
+
+
+thead{
+	background-color:rgb(34, 149, 171);
+}
+th{
+	padding-left:40px;
+	padding-right:40px;
+	width:250px;
+	height:40px;
+	
+}
+
+tbody{
+	background-color:rgb(132, 132, 132);
+	color:white;
+}
+
+td{
+	padding-left:40px;
+	padding-right:40px;
+	padding-bottom: 20px;
+	width:250px;
+}
+
+ td a{
+	 text-decoration: none;
+	 padding: 5px;
+	 font-size:16px;
+	 z-index: 200;
+	 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+	 padding-top:10px;
+	 font-size:16px;
+	 text-shadow: 3px 3px 5px #333333;;
+	
+}
+td a:visited{
+	color:yellow;
+	
+}
+
+td li{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+	padding-top:10px;
+	font-size:16px;
+	text-shadow: 3px 3px 5px #333333;;
+}
+.text-title{
+	position: relative;
+	left:10px;
+	top:10px;
+	text-align: center;
+	background-color: #333;
+	padding:10px 15px;
+}
+.bold-text{
+	color: coral;
+	font: normal 20px ;
+	display: inline-block;
+}
+.button {
+	
+	background-color:#0875bd;
+	color:rgb(25, 0, 255);
+	border:none;
+	margin-top: 30px;
+	margin-right: 20px;
+	text-align: center;
+	
+	border-radius: 6px;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	
+}
+
+.table-caption{
+	width:400px;
+	font-family:monospace;
+	margin:auto
+}
