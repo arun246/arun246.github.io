@@ -1,0 +1,309 @@
+/* *, *:before, *:after {
+    box-sizing: inherit;
+} */
+@media screen and (max-width:376px){
+
+.container1 .img-box{
+    margin-left: 82px;
+
+}
+.container1 .code{
+    width: 85%;;
+}
+        
+}
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body {
+    scroll-behavior: smooth;
+    background-color: #343434;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+
+}
+.head {
+    background-color: transparent;
+    position: sticky;
+    top: 10px;
+    padding-top: 20px;
+
+}
+.head ul{
+
+    display: flexbox;
+    margin-left: 70%;
+    /* overflow: hidden; */
+
+}
+.head li{
+
+    float: left;
+    list-style: none;
+    border-left: medium solid #80b918;
+
+}
+
+.head a:hover{
+
+    background-color: rgb(128, 185, 24,88%);
+    color: darkblue;
+    border-bottom:medium solid #fcbf49;
+
+}
+
+.head a {
+    padding: 10px 15px 10px 15px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    color: coral;
+}
+.container1 .profile-pic  {
+
+    width:150px;
+    height: 180px;
+    float: right;
+    border-radius: 50% ;
+    clear: both;
+    
+}
+
+.img-box > img:hover{
+    box-shadow: 5px 10px 18px #343434;
+
+
+}
+.container1 .img-box{
+    display: none;
+    float:right;
+    width:150px;
+    height: 190px;
+    
+    margin: 10px 17px 10px ;
+    background-color: #124979;
+    box-shadow: 5px 10px 18px #343434;
+    padding-bottom: 62px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    border: medium solid #a8dadc;
+    border-radius: 0px 0px 10px 10px;
+} 
+.img-box h3{
+    width: 100%;
+}
+
+
+.container1 .social {
+    margin-top: -16px;
+    height: 35px;
+    width: 100px;
+    clear: both;
+    
+}
+
+.container1 .social li{
+    margin-left: -15px;
+    background-color: transparent;
+    list-style: none;
+}
+.container1 .social img{
+    float: left;
+    height: 35px;
+    width: 35px;
+    transition: 50ms;
+}
+
+.container1 .social img:hover{
+    height: 45px;
+    width: 45px;
+
+}
+
+h3 {
+    color: antiquewhite;
+    font-family: 'Caveat',cursive;
+    width: 30%;
+    
+}
+section {
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+.container1 .code{
+    padding: 10px 0px 10px 15px;
+    width: 90%;
+    height: 80%;
+    border: medium solid #a8dadc;
+    border-radius: 10px;
+    margin: 35px 33px 20px 33px ;
+    display: none;
+
+}
+
+section .para  {
+    width:70%;
+    border-right:20px solid #fcbf49;
+    border-radius: 0px 10px 10px 0px ;
+    
+}
+.for-smaller-devices{
+    margin: 0 0;
+}
+.container2 .solutions{
+    padding: 10px 15px 10px 15px;
+    width: 70%;
+    border: medium solid #a8dadc;
+    border-radius: 10px;
+    margin: 0px auto ;
+    display: none;
+
+}
+.container3 .maintain{
+    padding: 10px 15px 10px 15px;
+    width: 70%;
+    border: medium solid #a8dadc;
+    border-radius: 10px;
+    margin: 0px auto ;
+    display: none;
+
+}
+
+section .solutions ul {
+    border-right:20px solid #fcbf49;
+    border-radius: 0px 10px 10px 0px ;
+}
+section .maintain ul {
+    border-right:20px solid #fcbf49;
+    border-radius: 0px 10px 10px 0px ;
+}
+
+section ul li:nth-child(even) {
+
+    background-color: #8d99ae;
+    color: black;
+}
+
+section ul li:nth-child(odd) {
+
+    background-color: #a8dadc;
+    color: black;
+}
+
+.container1 {
+
+    background-color:#454a4d;
+    height: auto;
+    
+}
+.container2 {
+
+    background-color: #454a4d ;
+    height: auto;
+}
+
+.container3 {
+
+    background-color: #454a4d;
+    height: auto;
+}
+
+/* .wrap {
+    display: flex;
+} */
+#Projects { 
+    background-color: #454a4d;
+    /* background-image: url(kelli-tungay-2LJ4rqK2qfU-unsplash.jpg); */
+    background-size: cover;
+    display: none;
+    color: cornsilk;
+       
+}
+
+#Projects div {
+    width: 70%;
+    margin: 0px auto ;
+}
+#Projects h3 {
+    margin-left: 45%;
+    color: #fb5b2a;
+
+    
+}
+
+
+
+#Experience {  
+    background-color: #454a4d;
+    display: none;
+    /* background-image: url(malte-wingen-5qT09yIbROk-unsplash.jpg); */
+    background-size: cover;
+    background-position: bottom left;
+    color: cornsilk;
+
+}
+#Experience div{
+    width: 70%;
+    margin: 0px auto ;
+
+}
+#Experience h3 {
+    margin-left: 45%;
+    color: #fb5b2a;
+    
+}
+
+#About {
+    background-color: #ffffff;
+    color: #343434;
+    display: none;
+    width: 50%;
+    
+}
+#About div{
+    width: 70%;
+    margin: 0px auto ;
+
+}
+#About h3 {
+    margin-left: 45%;
+    color: #fb5b2a;
+    
+}
+#About h2{
+    color: #fb5b2a;
+}
+
+#Contact {
+    background-color: #ffffff;
+    color: #343434;
+    display: none;
+    width: 50%;
+    
+}
+#Contact div{
+    width: 70%;
+    margin: 0px auto ;
+
+}
+#Contact h3 {
+    margin-left: 45%;
+    color: #fb5b2a;
+    
+}
+#Contact h2{
+    color: #fb5b2a;
+}
+
+footer {
+
+    background-color: #343434;
+    width: 16%;
+    margin: 0 auto;
+}
