@@ -102,8 +102,9 @@ body {
 .container1 .social {
     margin-top: -16px;
     height: 35px;
-    width: 100px;
+    width: 140px;
     clear: both;
+    margin-left: -15px;
     
 }
 
