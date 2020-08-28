@@ -7,4 +7,4 @@ I am from Mumbai ,India.
 
 ## Conatct me: arun.mbabu911@gmail.com
 
-## Url:[MY PORTFOLIO](https://arun246@github.io)
+## Url:[MY PORTFOLIO](https://arun246.github.io/)
