@@ -297,11 +297,13 @@ footer {
 }
 @media screen and (max-width : 450px) {
 
+
     .container1 .img-box{
         display: none !important;
     }
     .head ul{
         float: left;
     }
+   
             
 }
