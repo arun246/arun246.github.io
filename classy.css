@@ -1,14 +1,13 @@
 /* *, *:before, *:after {
     box-sizing: inherit;
 } */
-@media screen and (max-width:376px){
+@media screen and (max-width:450px){
 
 .container1 .img-box{
-    margin-left: 82px;
-
+    display: none;
 }
-.container1 .code{
-    width: 85%;;
+.head ul{
+    float: left;
 }
         
 }
@@ -29,14 +28,10 @@ body {
 .head {
     background-color: transparent;
     position: sticky;
-    top: 10px;
-    padding-top: 20px;
 
 }
 .head ul{
-
-    display: flexbox;
-    margin-left: 70%;
+    float: right;
     /* overflow: hidden; */
 
 }
@@ -143,7 +138,7 @@ section {
     height: 80%;
     border: medium solid #a8dadc;
     border-radius: 10px;
-    margin: 35px 33px 20px 33px ;
+    margin: 35px 33px 20px 8px ;
     display: none;
 
 }
@@ -154,9 +149,7 @@ section .para  {
     border-radius: 0px 10px 10px 0px ;
     
 }
-.for-smaller-devices{
-    margin: 0 0;
-}
+
 .container2 .solutions{
     padding: 10px 15px 10px 15px;
     width: 70%;
