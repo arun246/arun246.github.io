@@ -1,16 +1,7 @@
 /* *, *:before, *:after {
     box-sizing: inherit;
 } */
-@media screen and (max-width:450px){
 
-.container1 .img-box{
-    display: none;
-}
-.head ul{
-    float: left;
-}
-        
-}
 
 html{
     scroll-behavior: smooth;
@@ -257,8 +248,8 @@ section ul li:nth-child(odd) {
     background-color: #ffffff;
     color: #343434;
     display: none;
-    width: 95%;
-    margin-left: 20px;
+    margin: 0 auto;
+    width: 90%;
     
 }
 #About div{
@@ -279,8 +270,8 @@ section ul li:nth-child(odd) {
     background-color: #ffffff;
     color: #343434;
     display: none;
-    width: 95%;
-    margin-left: 20px;
+    margin: 0 auto;
+    width: 90%;
     
 }
 #Contact div{
@@ -302,4 +293,15 @@ footer {
     background-color: #343434;
     width: 16%;
     margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width : 450px) {
+
+    .container1 .img-box{
+        display: none !important;
+    }
+    .head ul{
+        float: left;
+    }
+            
 }
