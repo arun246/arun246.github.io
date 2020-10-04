@@ -19,6 +19,8 @@ body {
 .head {
     background-color: transparent;
     position: sticky;
+    top: 2px;
+    margin-right: 50px;
 
 }
 .head ul{
@@ -249,7 +251,7 @@ section ul li:nth-child(odd) {
     color: #343434;
     display: none;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     
 }
 #About div{
@@ -271,7 +273,7 @@ section ul li:nth-child(odd) {
     color: #343434;
     display: none;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     
 }
 #Contact div{
@@ -297,13 +299,21 @@ footer {
 }
 @media screen and (max-width : 450px) {
 
-
     .container1 .img-box{
         display: none !important;
     }
     .head ul{
         float: left;
-    }
-   
-            
+    }               
+}
+@media screen and (min-width :600px) {
+
+    #About{
+        width:80%;
+        left:10%;
+    }    
+    #Contact{
+        width:80%;
+        left:10%;
+    }        
 }
