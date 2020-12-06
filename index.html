@@ -33,7 +33,7 @@
                 }
             ],
             "gender": "Male",
-            "Description": "Freelance Developer",
+            "Description": "Freelance Website/ application Developer in Mumbai",
             "url": "https://arun246.gtihub.io",
             "image": "https://arun246.github.io/myself.jpg",
             "sameAs": [
@@ -52,6 +52,29 @@
                     <li><a id= "blog" href="#">Blog (coming soon)</a> </li>
                 </ul>
             </div>
+            <br><br><br>
+
+            <div class = "intro-about">
+
+                  <div class = "bold">Website Developer from Mumbai</div>
+                
+                <div class="aside">
+
+                    <p>I am a freelance website designer in Mumbai . 
+                         Avail my services at affordable cost for small Businesses
+                         in their journey. Get your beautiful websites developed using web and SEO standards.
+                        <p>My expertise :</p>
+                         Website Design, Custom website designing,
+                         wordpress websites, E-commerce website, Search engine 
+                         optimization.
+                         <p>My Rate Starts From: <span>500rs</span></p>
+                    </p>
+                </div>
+                <button id= "enquire" onclick="popdisplay(this)">Enquire</button>
+
+
+            </div>
+            
         <div class="Sub-Title">
             
             <h1> <span class="quote"> "</span>Coding Best Practises That I Follow for Programming Softwares <span class="quote"> "</span></h1>
@@ -116,7 +139,7 @@
         </section>
         <div class="Sub-Title">
             
-            <h1> <span class="quote"> "</span>My Works :-<span class="quote"> "</span></h1>
+            <h1> <span class="quote"> "</span>My Software Development Works :-<span class="quote"> "</span></h1>
             
         </div>
             <div class="wrap">
@@ -209,6 +232,17 @@
 
                         }
 
+                        else if(btn.id == "enquire"){
+                        var cont =  document.getElementById("Contact");
+                        var about = document.getElementById("cancelabt");
+                        popcancel(about);
+                        cont.style.display = "block";
+                        cont.style.position = "absolute";
+                        cont.style.top = "20%";
+                        cont.style.borderRadius = "10px 10px 10px 10px" ;
+
+                        }
+
 
                     }
                     //popup cancel
@@ -234,6 +268,12 @@
                                     var options = { direction: "left" };
                                     var duration = 1000;
                                     $('.code').toggle(effect,options ,duration); });
+                //Intro-about
+                $(document).ready(function(){
+                                    var effect = 'slide';
+                                    var options = { direction: "left" };
+                                    var duration = 1000;
+                                    $('.intro-about').toggle(effect,options ,duration); });
                 //profile box
                 $(document).ready(function(){
                                     var effect = 'slide';
