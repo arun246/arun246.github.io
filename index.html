@@ -53,27 +53,6 @@
                 </ul>
             </div>
             <br><br><br>
-
-            <div class = "intro-about">
-
-                  <div class = "bold">Website Developer from Mumbai</div>
-                
-                <div class="aside">
-
-                    <p>I am a freelance website designer in Mumbai . 
-                         Avail my services at affordable cost for small Businesses
-                         in their journey. Get your beautiful websites developed using web and SEO standards.
-                        <p>My expertise :</p>
-                         Website Design, Custom website designing,
-                         wordpress websites, E-commerce website, Search engine 
-                         optimization.
-                         
-                    </p>
-                </div>
-                <button id= "enquire" onclick="popdisplay(this)">Enquire</button>
-
-
-            </div>
             
         <div class="Sub-Title">
             
@@ -151,6 +130,9 @@
                             permutations of corpus question contained in a document or database.  The system also supports distributed access 
                             from internet for the faculty with separate (authentication and dashboard). Even added managerial portal and complementary 
                             student test series.</p>
+                        <a href="./pdf/Online Question Paper and Question Bank Generator and Student.pdf" download>link</a>
+                        <br> 
+                        <a href="https://www.ijsrcseit.com/archive.php?v=7&i=35&pyear=2020" target="blank"> Search Here</a>
                         <p></p>
                     </div>
                 </section>
@@ -195,6 +177,26 @@
                     </div>
                 </section>
             </div>
+            <div class = "intro-about">
+
+                  <div class = "bold">Website Developer from Mumbai</div>
+                
+                <div class="aside">
+
+                    <p>I am a freelance website designer in Mumbai . 
+                         Avail my services at affordable cost for small Businesses
+                         in their journey. Get your beautiful websites developed using web and SEO standards.
+                        <p>My expertise :</p>
+                         Website Design, Custom website designing,
+                         wordpress websites, E-commerce website, Search engine 
+                         optimization.
+                         
+                    </p>
+                </div>
+                <button id= "enquire" onclick="popdisplay(this)">Enquire</button>
+
+
+            </div>
             <footer > <p>Copyright 2020 @arunbabu</p></footer>
             
         <script type="text/javascript">
@@ -208,6 +210,11 @@
                             $('.slide1').toggle(effect,options ,duration);
                             window.onscroll="";}
                     
+                    }
+                    //scroll up
+                    function scrolltop() {
+                                document.body.scrollTop = 0;
+                                document.documentElement.scrollTop = 0;
                     }
                     //popup
                     function popdisplay(btn){
@@ -240,7 +247,7 @@
                         cont.style.position = "absolute";
                         cont.style.top = "20%";
                         cont.style.borderRadius = "10px 10px 10px 10px" ;
-
+                        scrolltop();
                         }
 
 
