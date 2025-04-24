@@ -247,19 +247,19 @@ section ul li:nth-child(odd) {
 
 .container1 {
 
-    background-color:#454a4d;
+    background-color:#f1ddcf;
     height: auto;
     
 }
 .container2 {
 
-    background-color: #454a4d ;
+    background-color: #f1ddcf ;
     height: auto;
 }
 
 .container3 {
 
-    background-color: #454a4d;
+    background-color: #f1ddcf;
     height: auto;
 }
 
@@ -267,7 +267,7 @@ section ul li:nth-child(odd) {
     display: flex;
 } */
 #Projects { 
-    background-color: #454a4d;
+    background-color: #f1ddcf;
     /* background-image: url(kelli-tungay-2LJ4rqK2qfU-unsplash.jpg); */
     background-size: cover;
     display: none;
@@ -292,7 +292,7 @@ section ul li:nth-child(odd) {
 
 
 #Experience {  
-    background-color: #454a4d;
+    background-color: #f1ddcf;
     display: none;
     /* background-image: url(malte-wingen-5qT09yIbROk-unsplash.jpg); */
     background-size: cover;
