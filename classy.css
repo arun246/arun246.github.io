@@ -993,55 +993,198 @@ img {
     gap: 16px;
 }
 
+.icon-sprite {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
 .project-card {
     position: relative;
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-top: 4px solid var(--yellow);
-    border-radius: 15px;
-    padding: 21px;
+    perspective: 1400px;
+    --accent: var(--yellow);
+    cursor: pointer;
+}
+
+.project-card > .flip-inner {
+    position: relative;
+    display: grid;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 700ms cubic-bezier(0.2, 0.75, 0.2, 1);
+}
+
+.project-card.flipped > .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-face {
+    grid-area: 1 / 1;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    height: 100%;
+    padding: 21px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--accent);
+    border-radius: 15px;
     box-shadow: var(--shadow);
-    transition: transform 180ms ease, box-shadow 180ms ease;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: box-shadow 180ms ease;
 }
 
-.project-card:hover {
-    transform: translateY(-4px);
+.project-card:hover .flip-face {
     box-shadow: var(--shadow-lift);
 }
 
+.flip-back {
+    transform: rotateY(180deg);
+    visibility: hidden;
+}
+
+.project-card.flipped .flip-front {
+    visibility: hidden;
+}
+
+.project-card.flipped .flip-back {
+    visibility: visible;
+}
+
 .accent-green {
-    border-top-color: var(--green);
+    --accent: var(--green);
 }
 
 .accent-navy {
-    border-top-color: var(--navy);
+    --accent: var(--navy);
 }
 
 .accent-orange {
-    border-top-color: var(--orange);
+    --accent: var(--orange);
 }
 
 .accent-yellow {
-    border-top-color: var(--yellow);
+    --accent: var(--yellow);
 }
 
 .accent-blue {
-    border-top-color: var(--blue);
+    --accent: var(--blue);
 }
 
-.project-top {
+.project-front-head,
+.project-back-head {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
 
-.project-top h3 {
+.project-front-head {
+    justify-content: flex-end;
+}
+
+.project-back-head {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(32, 35, 36, 0.16);
+}
+
+.back-label {
+    margin-right: auto;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+.back-index {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+}
+
+.mon-badge {
+    width: 56px;
+    height: 56px;
+    flex: none;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: var(--ink);
+    box-shadow:
+        inset 0 0 0 1px rgba(252, 191, 73, 0.28),
+        0 10px 18px -14px rgba(20, 20, 20, 0.7);
+}
+
+.mon-badge svg {
+    display: block;
+    width: 42px;
+    height: 42px;
+}
+
+.project-card:hover .mon-badge {
+    animation: mon-wiggle 700ms ease;
+}
+
+@keyframes mon-wiggle {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+    30% {
+        transform: rotate(-6deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+}
+
+.project-card h3 {
     font-size: 1.08rem;
     color: var(--ink-deep);
+}
+
+.project-teaser {
+    color: var(--muted);
+    font-size: 12.8px;
+    flex-grow: 1;
+}
+
+.flip-btn {
+    margin-top: auto;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 13px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--navy);
+    font-family: inherit;
+    font-size: 11.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.flip-btn:hover {
+    background: var(--cream);
+    border-color: var(--navy);
+    color: var(--ink);
+}
+
+.flip-back-btn {
+    color: var(--orange);
+}
+
+.flip-arrow {
+    font-size: 14px;
+    line-height: 1;
 }
 
 .status {
