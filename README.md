@@ -1,9 +1,8 @@
 # WEBSITE FOR PORTFOLIO 
 
-This is my portfolio for software/Web Developer.
-I am from Mumbai ,India.
+This is my portfolio for Web Application Developer.
+I am from Mumbai ,India.Currently in Kerala
 
->Feel free to contact me if you want a Freelancer to build those Technologies that can change the world.
 
 ## Conatct me: arun.mbabu911@gmail.com
 
